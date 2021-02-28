@@ -96,13 +96,37 @@ main {
 
       #popup {
         display: none;
-        width: 270px;
-        height: 55px;
+        width: 230px;
+        height: 50px;
         background-color: $VeryDarkGrayishBlue;
         position: absolute;
-        bottom: 90px;
-        right: -83px;
+        bottom: 50px;
+        right: -53px;
         border-radius: 10px;
+        .social {
+          margin: 17px auto;
+          display: flex;
+          align-items: center;
+          h4 {
+            color: $DesaturatedDarkBlue;
+            font-size: 11px;
+            padding-right: 15px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+          }
+          .icon {
+            padding: 8px;
+          }
+        }
+        .square {
+          width: 15px;
+          height: 15px;
+          background-color: $VeryDarkGrayishBlue;
+          position: absolute;
+          bottom: -3px;
+          right: 111px;
+          transform: rotate(45deg);
+        }
       }
     }
   }

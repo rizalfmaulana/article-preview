@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+$VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+$DesaturatedDarkBlue: hsl(214, 17%, 51%);
+$GrayishBlue: hsl(212, 23%, 69%);
+$LightGrayishBlue: hsl(210, 46%, 95%);
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +13,8 @@
 
 body {
   height: 100vh;
+  font-family: "Manrope", sans-serif;
+  background-color: $LightGrayishBlue;
 }
 
 main {
@@ -13,12 +22,88 @@ main {
   align-items: center;
   justify-content: center;
   height: 90%;
+  background-color: $LightGrayishBlue;
 }
 
 .container {
   margin: 20px auto;
   min-width: 630px;
   max-width: 730px;
-  background-color: var(--white);
+  background-color: white;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 9px 9px $GrayishBlue;
+  border-radius: 20px;
+  .pho {
+    .photo {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  .content {
+    padding: 20px;
+    .title {
+      padding-right: 50px;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      h1 {
+        font-size: 19px;
+        color: $VeryDarkGrayishBlue;
+      }
+    }
+    .body {
+      padding-right: 50px;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      p {
+        font-size: 11px;
+        color: $VeryDarkGrayishBlue;
+      }
+    }
+    .foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      .avatar {
+        width: 8%;
+        border-radius: 50%;
+      }
+      .detail {
+        margin-left: -170px;
+        h3 {
+          font-size: 11px;
+          color: $VeryDarkGrayishBlue;
+        }
+        p {
+          font-size: 11px;
+          color: $DesaturatedDarkBlue;
+        }
+      }
+      button {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        margin-right: 50px;
+        .btn {
+          display: inline-block;
+          cursor: pointer;
+        }
+      }
+
+      #popup {
+        display: none;
+        width: 270px;
+        height: 55px;
+        background-color: $VeryDarkGrayishBlue;
+        position: absolute;
+        bottom: 90px;
+        right: -83px;
+        border-radius: 10px;
+      }
+    }
+  }
 }

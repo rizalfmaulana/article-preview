@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +8,8 @@
 
 body {
   height: 100vh;
+  font-family: "Manrope", sans-serif;
+  background-color: #ecf2f8;
 }
 
 main {
@@ -20,13 +23,111 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   height: 90%;
+  background-color: #ecf2f8;
 }
 
 .container {
   margin: 20px auto;
   min-width: 630px;
   max-width: 730px;
-  background-color: var(--white);
+  background-color: white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 3px 9px 9px #9eafc2;
+          box-shadow: 3px 9px 9px #9eafc2;
+  border-radius: 20px;
+}
+
+.container .pho .photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container .content {
+  padding: 20px;
+}
+
+.container .content .title {
+  padding-right: 50px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.container .content .title h1 {
+  font-size: 19px;
+  color: #48556a;
+}
+
+.container .content .body {
+  padding-right: 50px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.container .content .body p {
+  font-size: 11px;
+  color: #48556a;
+}
+
+.container .content .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.container .content .foot .avatar {
+  width: 8%;
+  border-radius: 50%;
+}
+
+.container .content .foot .detail {
+  margin-left: -170px;
+}
+
+.container .content .foot .detail h3 {
+  font-size: 11px;
+  color: #48556a;
+}
+
+.container .content .foot .detail p {
+  font-size: 11px;
+  color: #6d7f97;
+}
+
+.container .content .foot button {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-right: 50px;
+}
+
+.container .content .foot button .btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.container .content .foot #popup {
+  display: none;
+  width: 270px;
+  height: 55px;
+  background-color: #48556a;
+  position: absolute;
+  bottom: 90px;
+  right: -83px;
   border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

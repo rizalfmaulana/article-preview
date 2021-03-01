@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
 
 $VeryDarkGrayishBlue: hsl(217, 19%, 35%);
 $DesaturatedDarkBlue: hsl(214, 17%, 51%);
@@ -37,8 +38,9 @@ main {
   border-radius: 20px;
   .pho {
     .photo {
-      width: 100%;
-      border-radius: 10px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px 0 0 20px;
     }
   }
   .content {
@@ -126,6 +128,63 @@ main {
           bottom: -3px;
           right: 111px;
           transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    min-width: 300px;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    .pho {
+      height: 200px;
+      width: 330px;
+      .photo {
+        height: 200px;
+        width: 330px;
+        margin-bottom: 10px;
+        border-radius: 20px 20px 0 0;
+      }
+    }
+    .content {
+      .title {
+        padding-right: 30px;
+        h1 {
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+      .body {
+        padding-right: 25px;
+        margin-bottom: 30px;
+        p {
+          font-size: 12px;
+        }
+      }
+      .foot {
+        .detail {
+          margin-left: -60px;
+        }
+        button {
+          z-index: 5;
+          margin-right: 20px;
+        }
+        #popup {
+          display: none;
+          height: 70px;
+          bottom: -21px;
+          left: -20px;
+          min-width: 330px;
+          border-radius: 0 0 10px 10px;
+          .square {
+            display: none;
+          }
         }
       }
     }
